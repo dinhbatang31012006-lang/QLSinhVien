@@ -40,8 +40,10 @@
             this.panelHeader = new System.Windows.Forms.Panel();
             this.lblTen = new System.Windows.Forms.Label();
             this.pnlContent = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
             this.panelSidebar.SuspendLayout();
             this.panelHeader.SuspendLayout();
+            this.pnlContent.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelSidebar
@@ -164,10 +166,20 @@
             // 
             // pnlContent
             // 
+            this.pnlContent.Controls.Add(this.label1);
             this.pnlContent.Location = new System.Drawing.Point(152, 44);
             this.pnlContent.Name = "pnlContent";
             this.pnlContent.Size = new System.Drawing.Size(648, 382);
             this.pnlContent.TabIndex = 3;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(59, 122);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(44, 16);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "label1";
             // 
             // Form1
             // 
@@ -183,6 +195,8 @@
             this.panelSidebar.ResumeLayout(false);
             this.panelHeader.ResumeLayout(false);
             this.panelHeader.PerformLayout();
+            this.pnlContent.ResumeLayout(false);
+            this.pnlContent.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -199,6 +213,7 @@
         private System.Windows.Forms.Button btnTrangchu;
         private System.Windows.Forms.Label lblTen;
         private System.Windows.Forms.Panel pnlContent;
+        private System.Windows.Forms.Label label1;
     }
 }
 
