@@ -36,7 +36,7 @@ namespace QLSinhVien
                     DataTable dt = new DataTable();
                     adapter.Fill(dt);
 
-                    dataGridView1.DataSource = dt;
+                   
                 }
                 catch (Exception ex)
                 {
@@ -54,7 +54,54 @@ namespace QLSinhVien
         {
 
         }
-       
-        
+
+        private void dataGridView1_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void btnSinhvien_Click(object sender, EventArgs e)
+        {
+            frmSinhvien frm = new frmSinhvien();
+
+            frm.TopLevel = false;
+            frm.FormBorderStyle = FormBorderStyle.None;
+            frm.Dock = DockStyle.Fill;
+
+            pnlContent.Controls.Clear();
+            pnlContent.Controls.Add(frm);
+
+            frm.Show();
+        }
+
+        private void panelHeader_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void btnDangXuat_Click(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show(
+         "Bạn có chắc chắn muốn đăng xuất không?",
+         "Xác nhận đăng xuất",
+         MessageBoxButtons.YesNo,
+         MessageBoxIcon.Question
+     );
+
+            if (result == DialogResult.Yes)
+            {
+                this.Close();
+            }
+        }
+
+        private void btnTrangchu_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnKhoa_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

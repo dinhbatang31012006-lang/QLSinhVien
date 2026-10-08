@@ -55,7 +55,7 @@ namespace QLSinhVien
                             this.Hide();
                             Form1 mainForm = new Form1(); // Mở Form chính
                             mainForm.ShowDialog();
-                            this.Close();
+                            this.Show();
                         }
                         else
                         {

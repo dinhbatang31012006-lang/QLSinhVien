@@ -28,22 +28,26 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.panelSidebar = new System.Windows.Forms.Panel();
-            this.panelHeader = new System.Windows.Forms.Panel();
-            this.btnKhoa = new System.Windows.Forms.Button();
-            this.butNganh = new System.Windows.Forms.Button();
-            this.btnLop = new System.Windows.Forms.Button();
-            this.btnSinhvien = new System.Windows.Forms.Button();
-            this.btnDiem = new System.Windows.Forms.Button();
+            this.btnTrangchu = new System.Windows.Forms.Button();
             this.btnDangXuat = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.btnDiem = new System.Windows.Forms.Button();
+            this.btnSinhvien = new System.Windows.Forms.Button();
+            this.btnLop = new System.Windows.Forms.Button();
+            this.butNganh = new System.Windows.Forms.Button();
+            this.btnKhoa = new System.Windows.Forms.Button();
+            this.panelHeader = new System.Windows.Forms.Panel();
+            this.lblTen = new System.Windows.Forms.Label();
+            this.pnlContent = new System.Windows.Forms.Panel();
             this.panelSidebar.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.panelHeader.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelSidebar
             // 
             this.panelSidebar.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.panelSidebar.Controls.Add(this.btnTrangchu);
             this.panelSidebar.Controls.Add(this.btnDangXuat);
             this.panelSidebar.Controls.Add(this.btnDiem);
             this.panelSidebar.Controls.Add(this.btnSinhvien);
@@ -53,96 +57,132 @@
             this.panelSidebar.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelSidebar.Location = new System.Drawing.Point(0, 0);
             this.panelSidebar.Name = "panelSidebar";
-            this.panelSidebar.Size = new System.Drawing.Size(153, 450);
+            this.panelSidebar.Size = new System.Drawing.Size(152, 429);
             this.panelSidebar.TabIndex = 1;
             this.panelSidebar.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
-            // panelHeader
+            // btnTrangchu
             // 
-            this.panelHeader.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelHeader.Location = new System.Drawing.Point(153, 0);
-            this.panelHeader.Name = "panelHeader";
-            this.panelHeader.Size = new System.Drawing.Size(647, 85);
-            this.panelHeader.TabIndex = 2;
-            // 
-            // btnKhoa
-            // 
-            this.btnKhoa.Location = new System.Drawing.Point(3, 67);
-            this.btnKhoa.Name = "btnKhoa";
-            this.btnKhoa.Size = new System.Drawing.Size(147, 33);
-            this.btnKhoa.TabIndex = 0;
-            this.btnKhoa.Text = "Quản lý Khoa";
-            this.btnKhoa.UseVisualStyleBackColor = true;
-            // 
-            // butNganh
-            // 
-            this.butNganh.Location = new System.Drawing.Point(3, 106);
-            this.butNganh.Name = "butNganh";
-            this.butNganh.Size = new System.Drawing.Size(147, 29);
-            this.butNganh.TabIndex = 1;
-            this.butNganh.Text = "Quản lý Ngành";
-            this.butNganh.UseVisualStyleBackColor = true;
-            // 
-            // btnLop
-            // 
-            this.btnLop.Location = new System.Drawing.Point(3, 141);
-            this.btnLop.Name = "btnLop";
-            this.btnLop.Size = new System.Drawing.Size(147, 26);
-            this.btnLop.TabIndex = 2;
-            this.btnLop.Text = "Quản lý Lớp";
-            this.btnLop.UseVisualStyleBackColor = true;
-            // 
-            // btnSinhvien
-            // 
-            this.btnSinhvien.Location = new System.Drawing.Point(3, 173);
-            this.btnSinhvien.Name = "btnSinhvien";
-            this.btnSinhvien.Size = new System.Drawing.Size(147, 30);
-            this.btnSinhvien.TabIndex = 3;
-            this.btnSinhvien.Text = "Quản lý Sinh viên";
-            this.btnSinhvien.UseVisualStyleBackColor = true;
-            // 
-            // btnDiem
-            // 
-            this.btnDiem.Location = new System.Drawing.Point(3, 209);
-            this.btnDiem.Name = "btnDiem";
-            this.btnDiem.Size = new System.Drawing.Size(147, 29);
-            this.btnDiem.TabIndex = 4;
-            this.btnDiem.Text = "Quản lý Điểm";
-            this.btnDiem.UseVisualStyleBackColor = true;
+            this.btnTrangchu.Image = ((System.Drawing.Image)(resources.GetObject("btnTrangchu.Image")));
+            this.btnTrangchu.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnTrangchu.Location = new System.Drawing.Point(0, 23);
+            this.btnTrangchu.Name = "btnTrangchu";
+            this.btnTrangchu.Size = new System.Drawing.Size(150, 45);
+            this.btnTrangchu.TabIndex = 6;
+            this.btnTrangchu.Text = "Trang chủ";
+            this.btnTrangchu.UseVisualStyleBackColor = true;
+            this.btnTrangchu.Click += new System.EventHandler(this.btnTrangchu_Click);
             // 
             // btnDangXuat
             // 
-            this.btnDangXuat.Location = new System.Drawing.Point(3, 244);
+            this.btnDangXuat.Image = ((System.Drawing.Image)(resources.GetObject("btnDangXuat.Image")));
+            this.btnDangXuat.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnDangXuat.Location = new System.Drawing.Point(0, 275);
             this.btnDangXuat.Name = "btnDangXuat";
-            this.btnDangXuat.Size = new System.Drawing.Size(147, 29);
+            this.btnDangXuat.Size = new System.Drawing.Size(150, 45);
             this.btnDangXuat.TabIndex = 5;
             this.btnDangXuat.Text = "Đăng xuất";
             this.btnDangXuat.UseVisualStyleBackColor = true;
+            this.btnDangXuat.Click += new System.EventHandler(this.btnDangXuat_Click);
             // 
-            // dataGridView1
+            // btnDiem
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView1.Location = new System.Drawing.Point(153, 85);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(647, 365);
-            this.dataGridView1.TabIndex = 4;
+            this.btnDiem.Image = ((System.Drawing.Image)(resources.GetObject("btnDiem.Image")));
+            this.btnDiem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnDiem.Location = new System.Drawing.Point(0, 224);
+            this.btnDiem.Name = "btnDiem";
+            this.btnDiem.Size = new System.Drawing.Size(150, 45);
+            this.btnDiem.TabIndex = 4;
+            this.btnDiem.Text = "Điểm";
+            this.btnDiem.UseVisualStyleBackColor = true;
+            // 
+            // btnSinhvien
+            // 
+            this.btnSinhvien.Image = ((System.Drawing.Image)(resources.GetObject("btnSinhvien.Image")));
+            this.btnSinhvien.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSinhvien.Location = new System.Drawing.Point(0, 173);
+            this.btnSinhvien.Name = "btnSinhvien";
+            this.btnSinhvien.Size = new System.Drawing.Size(150, 45);
+            this.btnSinhvien.TabIndex = 3;
+            this.btnSinhvien.Text = " Sinh viên";
+            this.btnSinhvien.UseVisualStyleBackColor = true;
+            this.btnSinhvien.Click += new System.EventHandler(this.btnSinhvien_Click);
+            // 
+            // btnLop
+            // 
+            this.btnLop.Location = new System.Drawing.Point(0, 173);
+            this.btnLop.Name = "btnLop";
+            this.btnLop.Size = new System.Drawing.Size(150, 45);
+            this.btnLop.TabIndex = 2;
+            this.btnLop.Text = "Lớp";
+            this.btnLop.UseVisualStyleBackColor = true;
+            // 
+            // butNganh
+            // 
+            this.butNganh.Image = ((System.Drawing.Image)(resources.GetObject("butNganh.Image")));
+            this.butNganh.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.butNganh.Location = new System.Drawing.Point(0, 122);
+            this.butNganh.Name = "butNganh";
+            this.butNganh.Size = new System.Drawing.Size(150, 45);
+            this.butNganh.TabIndex = 1;
+            this.butNganh.Text = " Ngành";
+            this.butNganh.UseVisualStyleBackColor = true;
+            // 
+            // btnKhoa
+            // 
+            this.btnKhoa.Image = ((System.Drawing.Image)(resources.GetObject("btnKhoa.Image")));
+            this.btnKhoa.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnKhoa.Location = new System.Drawing.Point(0, 71);
+            this.btnKhoa.Name = "btnKhoa";
+            this.btnKhoa.Size = new System.Drawing.Size(150, 45);
+            this.btnKhoa.TabIndex = 0;
+            this.btnKhoa.Text = " Khoa";
+            this.btnKhoa.UseVisualStyleBackColor = true;
+            this.btnKhoa.Click += new System.EventHandler(this.btnKhoa_Click);
+            // 
+            // panelHeader
+            // 
+            this.panelHeader.Controls.Add(this.lblTen);
+            this.panelHeader.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelHeader.Location = new System.Drawing.Point(152, 0);
+            this.panelHeader.Name = "panelHeader";
+            this.panelHeader.Size = new System.Drawing.Size(648, 49);
+            this.panelHeader.TabIndex = 2;
+            this.panelHeader.Paint += new System.Windows.Forms.PaintEventHandler(this.panelHeader_Paint);
+            // 
+            // lblTen
+            // 
+            this.lblTen.AutoEllipsis = true;
+            this.lblTen.AutoSize = true;
+            this.lblTen.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTen.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lblTen.Location = new System.Drawing.Point(91, 9);
+            this.lblTen.Name = "lblTen";
+            this.lblTen.Size = new System.Drawing.Size(450, 32);
+            this.lblTen.TabIndex = 0;
+            this.lblTen.Text = "HỆ THỐNG QUẢN LÝ SINH VIÊN";
+            // 
+            // pnlContent
+            // 
+            this.pnlContent.Location = new System.Drawing.Point(152, 44);
+            this.pnlContent.Name = "pnlContent";
+            this.pnlContent.Size = new System.Drawing.Size(648, 382);
+            this.pnlContent.TabIndex = 3;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.dataGridView1);
+            this.ClientSize = new System.Drawing.Size(800, 429);
+            this.Controls.Add(this.pnlContent);
             this.Controls.Add(this.panelHeader);
             this.Controls.Add(this.panelSidebar);
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.panelSidebar.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.panelHeader.ResumeLayout(false);
+            this.panelHeader.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -156,7 +196,9 @@
         private System.Windows.Forms.Button btnLop;
         private System.Windows.Forms.Button butNganh;
         private System.Windows.Forms.Button btnKhoa;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Button btnTrangchu;
+        private System.Windows.Forms.Label lblTen;
+        private System.Windows.Forms.Panel pnlContent;
     }
 }
 
