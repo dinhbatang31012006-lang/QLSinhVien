@@ -41,6 +41,7 @@
             this.lblTen = new System.Windows.Forms.Label();
             this.pnlContent = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.panelSidebar.SuspendLayout();
             this.panelHeader.SuspendLayout();
             this.pnlContent.SuspendLayout();
@@ -166,6 +167,7 @@
             // 
             // pnlContent
             // 
+            this.pnlContent.Controls.Add(this.comboBox1);
             this.pnlContent.Controls.Add(this.label1);
             this.pnlContent.Location = new System.Drawing.Point(152, 44);
             this.pnlContent.Name = "pnlContent";
@@ -180,6 +182,14 @@
             this.label1.Size = new System.Drawing.Size(44, 16);
             this.label1.TabIndex = 0;
             this.label1.Text = "label1";
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(197, 180);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(121, 24);
+            this.comboBox1.TabIndex = 1;
             // 
             // Form1
             // 
@@ -214,6 +224,7 @@
         private System.Windows.Forms.Label lblTen;
         private System.Windows.Forms.Panel pnlContent;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ComboBox comboBox1;
     }
 }
 
